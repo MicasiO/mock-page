@@ -5,12 +5,12 @@
 
 .root>div {
 	height: 30em;
-	padding: 20px 20%;
+	padding: 40px 15%;
 }
 
 header {
 	display: flex;
-	padding: 20px 20%;
+	padding: 20px 15%;
 	gap: 50%;
 	background: #1f2937;
 }
@@ -27,6 +27,10 @@ header .right {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+}
+
+header .right>div {
+	cursor: pointer;
 }
 
 .title {
@@ -60,10 +64,115 @@ header .right {
 	color: #f9faf8;
 	font-weight: 600;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 30px;
+	gap: 50px;
+}
+
+.info .top {
+	font-size: 36px;
+	font-weight: bold;
+	color: #1f2937;
+}
+
+.info .bottom {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.info .bottom .box {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	height: 300px;
+	text-align: center;
+	color: #2e2e2e;
+	gap: 10px;
+}
+
+.info .bottom .box p {
+	font-size: 18px;
+}
+
+.info .bottom .box img {
+	border-radius: 15px;
+	border: 5px solid #2883f6;
+	object-fit: contain;
+	height: 230px;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	background-color: #e5e7eb;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 10px;
+}
+
+.quote .text,
+.quote .author {
+	padding: 0 20%;
+}
+
+.quote .text {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: lighter;
+	color: #1f2937;
+}
+
+.quote .author {
+	font-size: 24px;
+	color: #1f2937;
+	font-weight: bolder;
+}
+
+.signup {
+	height: 25em !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.signup .box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: #2883f6;
+	color: #f9faf8;
+	padding: 60px 150px;
+	border-radius: 15px;
+}
+
+.signup p {
+	font-size: 18px;
+}
+
+.signup .button {
+	font-weight: bolder;
+	font-size: 24px;
+	border: 3px #f9faf8 solid;
+	border-radius: 15px;
+	padding: 5px 40px;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1f2937;
+	height: 5em;
+	font-size: 24px;
+	color: #f9faf8;
 }
